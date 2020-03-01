@@ -1,0 +1,184 @@
+<html>
+    <head>
+        <title>Career Predictor</title>
+      <link rel="stylesheet" types="text/css" href="{{ url_for('static', filename = 'formpage.css') }}">
+      <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'bootstrap.css') }}">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+       <meta name="viewport" content="width=device-width, initial-scale=1">
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    </head>
+
+
+    <body>
+
+
+           <nav class="navbar navbar-expand-md bg-info navbar-dark">
+             <div class="container">
+                 <a href="/" class="navbar-brand text-warning font-weight-bold"><img src="/static/datahacker2.jpg" alt="Italian Trulli"></a>
+
+
+                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsenavbar">
+
+                 <span class="navbar-toggler-icon"></span>
+
+                 </button>
+
+                 <div class="collapse navbar-collapse " id="collapsenavbar">
+                     <ul class="navbar-nav ml-auto ">
+                          <li class="nav-item">
+                             <a href="technological" class="nav-link text-white">Tech Skill Checker</a>
+                         </li>
+
+                         <li class="nav-item">
+                             <a href="logical" class="nav-link text-white">Logical Skill Checker</a>
+                         </li>
+                    <li class="nav-item">
+                             <a href="team" class="nav-link text-white">Team</a>
+                         </li>
+                         <li class="nav-item">
+                             <a href="contact" class="nav-link text-white"> Contact</a>
+                         </li>
+                          <li class="nav-item">
+                             <a href="about" class="nav-link text-white">About Us </a>
+                         </li>
+
+                     </ul>
+                 </div>
+             </div>
+
+             </nav>
+
+             <div class="container-fluid textpage">
+                <div class="container text1 text-center ">
+                  <h1> Logical Skill Checker</h1>
+                    <p>Fill up the form and get your Logical skill score<p>
+                    <div class="container-fluid  formbranch text-md-left border border-dark ">
+   <form   action="" method="POST" >
+
+
+
+
+
+<label for="serv">Complete the series:
+                           <b>0,3,8,15,24,35,48,_ </b> </label>
+    <select id="serv" name="serv">
+      <option value="0">65</option>
+      <option value="1">67</option>
+      <option value="2">63</option>
+       <option value="3">64</option>
+
+    </select>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+<label for="zone">Smallest Odd <b>Composite Number</b>(having more than two factors): </label>
+    <select id="zone" name="zone">
+      <option value="0">1</option>
+      <option value="1">5</option>
+      <option value="2">15</option>
+    <option value="3">9</option>
+
+
+    </select>
+    <br>
+    <br>
+    <br>
+     <br>
+     <br>
+
+
+    <label for="Time1">If <b>X+Y=12</b> and <b>X*Y=35</b> then X-Y=? </label>
+    <select id="Time1" name="Time1">
+      <option value="0">2</option>
+      <option value="1">3</option>
+      <option value="2">4</option>
+      <option value="3">5</option>
+
+
+    </select>
+    <br>  <br>
+    <br>
+    <br>
+    <br>
+
+
+    <label for="people1">What is the <b>sum of smallest</b> odd 2 digit number and greatest 3 digit number?</label>
+    <select id="people1" name="people1">
+      <option value="0">1000</option>
+      <option value="1">1010</option>
+      <option value="2">990</option>
+      <option value="3">1009</option>
+
+    </select>
+
+
+    <br>
+     <br>
+    <br>
+    <br>
+    <br>
+    <label for="logical1">How many 3 digit numbers are completely <b>divisible by 6</b>?</label>
+    <select id="logical1" name="logical1">
+      <option value="0">146</option>
+      <option value="1">148</option>
+      <option value="2">150</option>
+    <option value="3">152</option>
+    </select>
+
+     <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+    <label for="Bar3">If x and y are <b>prime number</b> greater than 2 then:</label>
+    <select id="Bar3" name="Bar3">
+      <option value="0">x+y is always prime</option>
+      <option value="1">x+y is always not prime </option>
+        <option value="2">x+y can be both prime and not prime </option>
+      <option value="3"> x*y is prime</option>
+
+    </select>
+    <br>
+     <br>
+    <br>
+    <br>
+    <br>
+
+    <div class=" container text2 text-center"><input type="submit" value="Submit"> </div>
+
+
+    {% if message %}
+        <p>{{ message }}</p>
+    {% endif %}
+
+  </form>
+</div>
+                </div>
+
+             </div>
+
+
+
+            <div class=" container text-center bg-dark" style="  font-size:18px; padding:9px; font-weight:700;">
+            <p style="margin-top:0; padding:0; color: orange;">Design and developed by DATA HACKER</p>
+        </div>
+
+
+            </body>
+</html>

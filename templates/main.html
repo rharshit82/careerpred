@@ -1,0 +1,296 @@
+<html>
+    <head>
+        <title>Career Predictor</title>
+<!--        <link rel="stylesheet" types="text/css" href="{{ url_for('static', filename = 'formpage1.css') }}">-->
+      <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'bootstrap.css') }}">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+       <meta name="viewport" content="width=device-width, initial-scale=1">
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+    </head>
+    
+    
+    <body>
+                 <div class="bgimage">
+
+           
+           <nav class="navbar navbar-expand-md bg-info navbar-dark ">
+             <div class="container">
+                 <a href="/" class="navbar-brand text-warning font-weight-bold"><img src="/static/datahacker2.jpg" alt="Italian Trulli">
+</a>
+
+
+                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsenavbar">
+
+                 <span class="navbar-toggler-icon"></span>
+
+                 </button>
+
+                 <div class="collapse navbar-collapse " id="collapsenavbar">
+                     <ul class="navbar-nav ml-auto ">
+                          <li class="nav-item">
+                             <a href="technological" class="nav-link text-white">Tech Skill Checker</a>
+                         </li>
+
+                         <li class="nav-item">
+                             <a href="logical" class="nav-link text-white">Logical Skill Checker</a>
+                         </li>
+                    <li class="nav-item">
+                             <a href="team" class="nav-link text-white">Team</a>
+                         </li>
+                         <li class="nav-item">
+                             <a href="contact" class="nav-link text-white"> Contact</a>
+                         </li>
+                          <li class="nav-item">
+                             <a href="about" class="nav-link text-white">About Us </a>
+                         </li>
+
+                     </ul>
+                 </div>
+             </div>
+
+             </nav>
+              
+             <div class="container-fluid textpage">
+                <div class="container text1 text-center ">
+                   <h1>Career Prediction Form</h1>
+                   <br>
+                   <br>
+                   <br>
+
+            
+                         <div class="container-fluid textpage3">
+                <div class="container text1 text-center ">
+   
+                    <p>Fill up the questions asked and predict you future stream.</p>
+                    <div class="container-fluid  formbranch text-md-left border border-dark "> 
+  <form action="{{ url_for('predict')}}" method="POST">
+    <br>
+    <br>
+    <br>
+    <label for="markss">Average Marks you got in Science in your High school</label>
+    <select id="markss" name="markss">
+      <option value="0">1</option> 
+      <option value="1">2</option> 
+      <option value="2">3</option> 
+      <option value="3">4</option> 
+      <option value="4">5</option> 
+      <option value="5">6</option> 
+      <option value="6">7</option> 
+      <option value="7">8</option> 
+      <option value="8">9</option> 
+      <option value="9">10</option> 
+      
+    </select> 
+    <br>  <br>
+    <br>
+    <br>
+    <br>
+    
+    
+    <label for="hey">Average Marks you got in Maths in your High school</label>
+    <select id="hey" name="hey">
+      <option value="0">1</option>
+      <option value="1">2</option> 
+      <option value="2">3</option> 
+      <option value="3">4</option> 
+      <option value="4">5</option> 
+      <option value="5">6</option> 
+      <option value="6">7</option> 
+      <option value="7">8</option> 
+      <option value="8">9</option> 
+      <option value="9">10</option> 
+      
+    </select> 
+    
+    
+    <br>
+     <br>
+    <br>
+    <br>
+    <br>
+    <label for="marks_l">Mark Your Logical Skill</label>
+
+    <select id="marks_l" name="marks_l">
+      <option value="0">1</option> 
+      <option value="1">2</option> 
+      <option value="2">3</option> 
+      <option value="3">4</option> 
+      <option value="4">5</option> 
+      <option value="5">6</option> 
+      <option value="6">7</option> 
+      <option value="7">8</option> 
+      <option value="8">9</option> 
+      <option value="9">10</option> 
+      
+    </select>
+      <a href="logical"><u>Click here to get your Logical skill score</u></a>
+
+    
+     <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    
+    
+    <label for="mem">Mark Your memorizing skill capacity out of 10</label>
+
+    <select id="mem" name="mem">
+      <option value="0">1</option> 
+      <option value="1">2</option> 
+      <option value="2">3</option> 
+      <option value="3">4</option> 
+      <option value="4">5</option> 
+      <option value="5">6</option> 
+      <option value="6">7</option> 
+      <option value="7">8</option> 
+      <option value="8">9</option> 
+      <option value="9">10</option> 
+      
+    </select> 
+     <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <label for="tech">How likely do you want to learn new technologies came to market</label>
+    <select id="tech" name="tech">
+      <option value="0">1</option> 
+      <option value="1">2</option> 
+      <option value="2">3</option> 
+      <option value="3">4</option> 
+      <option value="4">5</option> 
+      <option value="5">6</option> 
+      <option value="6">7</option> 
+      <option value="7">8</option> 
+      <option value="8">9</option> 
+      <option value="9">10</option> 
+      
+    </select>
+      <a href="technological"><u>Click here to get your Technical skill score</u></a>
+    
+    <br>
+     <br>
+    <br>
+    <br>
+    <br>
+    
+     
+      <label for="int">Do you Have Interest in robotics,building design or hardware</label>
+    <select id="int" name="int">
+      <option value="1">Yes</option>
+      <option value="0">No</option>
+     
+    </select> 
+    <br>
+     <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <label for="comp">Do you like Computer programming?</label>
+    <select id="comp" name="comp">
+      <option value="1">Yes</option>
+      <option value="0">No</option>
+
+    </select> 
+    
+    <br>
+     <br>
+    <br>
+    <br>
+    <br>
+    
+      <label for="any">Choose Any One of the following</label>
+    <select id="any" name="any">
+      <option value="0">Fame </option> 
+      <option value="1">Money</option> 
+     
+    </select> 
+    
+     
+      <br>
+       <br>
+    <br>
+    <br>
+    <br>
+      
+       
+         <label for="y">What do you see yourself in next 10 years</label>
+    <select id="y" name="y">
+      <option value="1">Well settled life with average pay</option>
+      <option value="0">Hectic life with higher pay</option>
+     
+    </select> 
+    
+     <br> 
+      <br>
+    <br>
+    <br>
+    <br>
+     
+      <label for="s_m">Do you love studying Mathematics and Science</label>
+    <select id="s_m" name="s_m">
+      <option value="0">Yes</option> 
+      <option value="1">No</option> 
+     
+    </select> 
+    
+    <br>
+     <br>
+    <br>
+    <br>
+    <br>
+
+    </select> 
+    
+    <br>
+    <br>
+    <br>
+    <br>
+     <div class=" container text2 text-center"><input type="submit" value="Submit"> </div>
+<!--    <div class=" container text2 text-center btn-block"><input type="submit" value="Submit"> </div>-->
+      
+  </form> 
+</div> 
+                </div>
+            </div>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+<!--
+            
+            Form 3 ends
+-->
+            
+            <div class=" container text-center bg-dark" style="  font-size:18px; padding:9px; font-weight:700;">
+            <p style="margin-top:0; padding:0; color: orange;">Design and developed by DATA HACKER</p>
+        </div>
+            
+        
+            </body>
+</html>

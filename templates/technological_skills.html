@@ -1,0 +1,192 @@
+<html>
+    <head>
+        <title>Career Predictor</title>
+     <link rel="stylesheet" types="text/css" href="{{ url_for('static', filename = 'formpage.css') }}">
+      <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'bootstrap.css') }}">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+       <meta name="viewport" content="width=device-width, initial-scale=1">
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    </head>
+
+
+    <body>
+
+
+           <nav class="navbar navbar-expand-md bg-info navbar-dark  ">
+             <div class="container">
+                 <a href="/" class="navbar-brand text-warning font-weight-bold"><img src="/static/datahacker2.jpg" alt="Italian Trulli"></a>
+
+
+                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsenavbar">
+
+                 <span class="navbar-toggler-icon"></span>
+
+                 </button>
+
+                 <div class="collapse navbar-collapse " id="collapsenavbar">
+                     <ul class="navbar-nav ml-auto ">
+                         <li class="nav-item">
+                             <a href="technological" class="nav-link text-white">Tech Skill Checker</a>
+                         </li>
+
+                         <li class="nav-item">
+                             <a href="logical" class="nav-link text-white">Logical Skill Checker</a>
+                         </li>
+                    <li class="nav-item">
+                             <a href="team" class="nav-link text-white">Team</a>
+                         </li>
+                         <li class="nav-item">
+                             <a href="contact" class="nav-link text-white"> Contact</a>
+                         </li>
+                          <li class="nav-item">
+                             <a href="about" class="nav-link text-white">About Us </a>
+                         </li>
+
+                     </ul>
+                 </div>
+             </div>
+
+             </nav>
+
+             <div class="container-fluid textpage">
+                <div class="container text1 text-center ">
+              
+              
+                   <br>
+
+
+                   <div class="container-fluid textpage1">
+                <div class="container text1 text-center ">
+                   <h1> Technical Skill Checker</h1>
+                    <p>Fill up the form and get your Technical skill score<p>
+                    <div class="container-fluid  formbranch text-md-left border border-dark ">
+   <form action="" method="POST"  >
+
+
+
+
+
+
+<label for="full_form">Full form of <b>http</b>:</label>
+    <select id="full_form" name="full_form">
+      <option value="0">hyper text type protocol</option>
+      <option value="1">hyper type text protocol</option>
+      <option value="2">hyper text transfer protocol</option>
+       <option value="2">none of these</option>
+
+    </select>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+<label for="zone1"><b>.gif</b> is an extension of:s </label>
+    <select id="zone1" name="zone1">
+      <option value="0">image file</option>
+      <option value="1">video file</option>
+      <option value="2">Audio file</option>
+    <option value="3">word file</option>
+
+
+    </select>
+    <br>
+    <br>
+    <br>
+     <br>
+     <br>
+
+
+    <label for="Time1"><b>1024 bit</b> is equal to how many bytes:</label>
+    <select id="Time" name="Time">
+      <option value="0">1 bytes</option>
+      <option value="1">128 bytes</option>
+      <option value="2">32 bytes</option>
+      <option value="3">64 bytes</option>
+
+
+    </select>
+    <br>  <br>
+    <br>
+    <br>
+    <br>
+
+
+    <label for="people1"><b>Firewall</b> in computer is used for:</label>
+    <select id="people1" name="people1">
+      <option value="0">security</option>
+      <option value="1">data transmission</option>
+      <option value="2">authentication</option>
+      <option value="3"> monitoring </option>
+
+    </select>
+
+
+    <br>
+     <br>
+    <br>
+    <br>
+    <br>
+    <label for="logical2"><b>MS word</b> is an example of:</label>
+    <select id="logical2" name="logical2">
+      <option value="0">operating system</option>
+      <option value="1"> processing device </option>
+      <option value="2">application software </option>
+    <option value="3">input device</option>
+    </select>
+
+     <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+    <label for="Bar2">Which of the following <b>programming language</b> is used to create program like applets:</label>
+    <select id="Bar2" name="Bar2">
+      <option value="0">C</option>
+      <option value="1">Java</option>
+        <option value="2">Cobol </option>
+      <option value="3">Flask</option>
+
+    </select>
+    <br>
+     <br>
+    <br>
+    <br>
+    <br>
+
+    <div class=" container text2 text-center"><input type="submit" value="Submit"> </div>
+
+  </form>
+                          {% if message %}
+        <p>{{ message }}</p>
+    {% endif %}
+</div>
+                </div>
+
+             </div>
+
+
+
+
+
+
+
+   <div class=" container text-center bg-dark" style="  font-size:18px; padding:9px; font-weight:700;">
+            <p style="margin-top:0; padding:0; color: orange;">Designed and developed by team DATA HACKER</p>
+        </div>
+
+            </body>
+</html>
